@@ -1,0 +1,37 @@
+.header {
+    justify-content: space-evenly;
+    font-weight: bolder;
+}
+
+.table {
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.tbody {
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: 0;
+}
+
+.table td {
+    min-width: fit-content;
+    margin: auto;
+    padding: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .card {
+        width: 100%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+    }
+}

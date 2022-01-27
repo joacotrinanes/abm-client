@@ -1,0 +1,97 @@
+.submit {
+    background-color: rgb(76, 175, 80);
+    color: rgb(214, 214, 214);
+    font-weight: bolder;
+    font-size: medium;
+    border-radius: 20px;
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 5%;
+    border: 0;
+}
+
+.clear {
+    background-color: rgb(138, 136, 136);
+    color: rgb(214, 214, 214);
+    border-radius: 20px;
+    border: 0;
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 5%;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.clientForm {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 1%;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.formCard {
+    background-color: rgb(22, 73, 100);
+    width: 50%;
+    margin: auto;
+    color: white;
+    margin: auto;
+    margin-right: 10%;
+}
+
+.formWrapper {
+    width: 50%;
+    background-color: transparent;
+    margin: auto;
+}
+
+.clientForm__control input {
+    width: 80%;
+    height: 20px;
+    background: #e0dede;
+    display: flex;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.clientForm__control label {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    margin-bottom: 4px;
+}
+
+.clientForm__control__radio {
+    display: block;
+}
+
+.clientForm__control__radio input {
+    margin: 2%;
+}
+
+.clientForm__control {
+    display: inline;
+    margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .formWrapper {
+        width: 100%;
+    }
+    .formCard {
+        background-color: rgb(22, 73, 100);
+        width: 80%;
+        margin: auto;
+        color: white;
+    }
+}

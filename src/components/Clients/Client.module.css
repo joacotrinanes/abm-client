@@ -1,0 +1,31 @@
+.select {
+    background-color: #18991c;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.delete {
+    background-color: #c21e1e;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.select:hover {
+    background-color: #084b0a;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: #680d0d;
+    cursor: pointer;
+}
