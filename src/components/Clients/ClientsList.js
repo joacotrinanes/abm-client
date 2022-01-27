@@ -5,7 +5,7 @@ import Card from '../UI/Card';
 
 const ClientsList = (props) => {
   return (
-    <Card className={styles.card}>
+    <div className={styles.card}>
       <table className={styles.table}>
         <thead className={styles.header}>
           <tr>
@@ -37,7 +37,7 @@ const ClientsList = (props) => {
           })}
         </tbody>
       </table>
-    </Card>
+    </div>
   );
 };
 

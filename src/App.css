@@ -1,6 +1,8 @@
 .bodyApp {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    margin-top: 8%;
 }
 
 @media only screen and (max-width: 900px) {

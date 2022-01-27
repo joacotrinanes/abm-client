@@ -44,7 +44,7 @@ const ClientForm = (props) => {
       let lastID = Math.max(...idArray);
 
       client = {
-        id: props.clients.length > 0 ? lastID + 1 : 0,
+        id: props.clients.length > 0 ? lastID + 1 : 1,
         nombre: enteredName,
         apellido: enteredLastName,
         RUT: +enteredRUT,
@@ -97,10 +97,10 @@ const ClientForm = (props) => {
     <div className="formWrapper">
       <Card className="formCard">
         <form onSubmit={onSubmitHandler} id="form" className="clientForm">
-          <h4 className="title">ABM Cliente</h4>
+          <h4 className="title"> ABM CLIENTE </h4>
           <div className="clientForm__controls">
             <div className="clientForm__control">
-              <label htmlFor="nombre">Nombre: </label>
+              <label htmlFor="nombre"> Nombre: </label>
               <input
                 id="nombre"
                 type="text"
@@ -111,7 +111,7 @@ const ClientForm = (props) => {
             </div>
             <br />
             <div className="clientForm__control">
-              <label htmlFor="apellido">Apellido: </label>
+              <label htmlFor="apellido"> Apellido: </label>
               <input
                 id="apellido"
                 type="text"
@@ -122,7 +122,7 @@ const ClientForm = (props) => {
             </div>
             <br />
             <div className="clientForm__control">
-              <label htmlFor="rut">RUT: </label>
+              <label htmlFor="rut"> RUT: </label>
               <input
                 id="rut"
                 type="number"
@@ -132,7 +132,7 @@ const ClientForm = (props) => {
             </div>
             <br />
             <div className="clientForm__control__radio">
-              <label>Tipo: </label>
+              <label> Tipo: </label>
               <input
                 id="empresa"
                 name="tipo"
@@ -141,7 +141,7 @@ const ClientForm = (props) => {
                 onChange={typeHandler}
                 checked={enteredType === 'Empresa' ? true : false}
               />
-              <label htmlFor="empresa">Empresa</label>
+              <label htmlFor="empresa"> Empresa </label>
               <input
                 id="consumidorFinal"
                 name="tipo"
@@ -150,11 +150,11 @@ const ClientForm = (props) => {
                 onChange={typeHandler}
                 checked={enteredType === 'Consumidor Final' ? true : false}
               />
-              <label htmlFor="consumidorFinal">Consumidor Final</label>
+              <label htmlFor="consumidorFinal"> Consumidor Final </label>
             </div>
             <br />
             <div className="clientForm__control">
-              <label htmlFor="telefono">Teléfono: </label>
+              <label htmlFor="telefono"> Teléfono: </label>
               <input
                 id="telefono"
                 type="tel"
@@ -164,7 +164,7 @@ const ClientForm = (props) => {
             </div>
             <br />
             <div className="clientForm__control__radio">
-              <label>Activo: </label>
+              <label> Activo: </label>
               <input
                 id="activoSi"
                 name="activo"
@@ -173,7 +173,7 @@ const ClientForm = (props) => {
                 onChange={isActiveHandler}
                 checked={isActive === 'Activo' ? true : false}
               />
-              <label htmlFor="activoSi">Activo</label>
+              <label htmlFor="activoSi"> Activo </label>
               <input
                 id="activoNo"
                 name="activo"
@@ -182,7 +182,7 @@ const ClientForm = (props) => {
                 onChange={isActiveHandler}
                 checked={isActive === 'No Activo' ? true : false}
               />
-              <label htmlFor="activoNo">No Activo</label>
+              <label htmlFor="activoNo"> No Activo </label>
             </div>
           </div>
           <br />

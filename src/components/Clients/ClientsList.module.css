@@ -7,6 +7,8 @@
     justify-content: center;
     width: 100%;
     margin: auto;
+    font-size: small;
+    text-align: center;
 }
 
 .tbody {
@@ -14,11 +16,13 @@
 }
 
 .card {
-    background-color: aliceblue;
+    background-color: rgb(203, 215, 226);
     display: flex;
     justify-content: center;
     width: 50%;
-    margin-left: 0;
+    margin: auto;
+    margin-top: 5%;
+    margin-right: 2%;
 }
 
 .table td {
@@ -30,7 +34,7 @@
 @media only screen and (max-width: 900px) {
     .card {
         width: 100%;
-        background-color: aliceblue;
+        background-color: rgb(101, 171, 232);
         display: flex;
         justify-content: center;
     }

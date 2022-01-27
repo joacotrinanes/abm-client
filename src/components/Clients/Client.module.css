@@ -1,5 +1,5 @@
 .select {
-    background-color: #18991c;
+    background-color: #0aa20f;
     border: none;
     color: white;
     text-align: center;
@@ -10,7 +10,7 @@
 }
 
 .delete {
-    background-color: #c21e1e;
+    background-color: #9b0b0b;
     border: none;
     color: white;
     text-align: center;
@@ -20,12 +20,14 @@
     width: 100%;
 }
 
-.select:hover {
-    background-color: #084b0a;
+.select:hover,
+.select:active {
+    background-color: #23bf28;
     cursor: pointer;
 }
 
-.delete:hover {
-    background-color: #680d0d;
+.delete:hover,
+.delete:active {
+    background-color: #c21e1e;
     cursor: pointer;
 }

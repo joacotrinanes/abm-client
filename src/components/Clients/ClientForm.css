@@ -1,5 +1,5 @@
 .submit {
-    background-color: rgb(76, 175, 80);
+    background-color: rgb(25, 163, 30);
     color: rgb(214, 214, 214);
     font-weight: bolder;
     font-size: medium;
@@ -11,8 +11,14 @@
     border: 0;
 }
 
+.submit:hover,
+.submit:active {
+    background-color: rgb(45, 189, 50);
+    cursor: pointer;
+}
+
 .clear {
-    background-color: rgb(138, 136, 136);
+    background-color: rgb(196, 148, 28);
     color: rgb(214, 214, 214);
     border-radius: 20px;
     border: 0;
@@ -22,6 +28,12 @@
     margin-bottom: 5%;
     font-weight: bolder;
     font-size: medium;
+}
+
+.clear:hover,
+.clear:active {
+    background-color: rgb(223, 166, 21);
+    cursor: pointer;
 }
 
 .clientForm {
@@ -39,12 +51,14 @@
 }
 
 .formCard {
-    background-color: rgb(22, 73, 100);
+    background-color: rgb(14, 49, 68);
     width: 50%;
     margin: auto;
     color: white;
-    margin: auto;
-    margin-right: 10%;
+}
+
+.formCard:hover {
+    background-color: rgb(15, 60, 84);
 }
 
 .formWrapper {
@@ -53,9 +67,13 @@
     margin: auto;
 }
 
+.clientForm__controls {
+    display: block;
+}
+
 .clientForm__control input {
-    width: 80%;
-    height: 20px;
+    width: auto;
+    height: 25px;
     background: #e0dede;
     display: flex;
     margin: auto;
@@ -67,7 +85,7 @@
 .clientForm__control label {
     display: flex;
     justify-content: left;
-    margin-left: 30px;
+    margin-left: 9%;
     margin-bottom: 4px;
 }
 
@@ -80,7 +98,8 @@
 }
 
 .clientForm__control {
-    display: inline;
+    display: flex;
+    flex-direction: row;
     margin: auto;
 }
 
@@ -89,7 +108,7 @@
         width: 100%;
     }
     .formCard {
-        background-color: rgb(22, 73, 100);
+        background-color: rgb(14, 49, 68);
         width: 80%;
         margin: auto;
         color: white;

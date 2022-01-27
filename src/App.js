@@ -7,27 +7,6 @@ import NavBar from './components/UI/NavBar';
 import ClientForm from './components/Clients/ClientForm';
 import Wrapper from './components/Helpers/Wrapper';
 
-let DUMMY_CLIENTS = [
-  {
-    id: 1,
-    nombre: 'Juan',
-    apellido: 'Perez',
-    RUT: 232432,
-    tipo: 'Empresa',
-    telefono: 27089099,
-    activo: 'No Activo'
-  },
-  {
-    id: 2,
-    nombre: 'Roberto',
-    apellido: 'Perez',
-    RUT: 23243342,
-    tipo: 'Consumidor Final',
-    telefono: 27089444,
-    activo: 'Activo'
-  }
-];
-
 const baseURL =
   'https://www.crudcrud.com/api/d55e7c3b76f940c6ae2905deaaad49dd/test-1';
 
@@ -47,16 +26,6 @@ function App() {
   useEffect(() => {
     fetchClients();
   }, []);
-
-  let editClient = {
-    id: '',
-    nombre: '',
-    apellido: '',
-    RUT: '',
-    tipo: '',
-    telefono: '',
-    activo: ''
-  };
 
   const clientHandler = async (client) => {
     try {
