@@ -69,11 +69,12 @@
 
 .clientForm__controls {
     display: block;
+    height: auto;
 }
 
 .clientForm__control input {
     width: auto;
-    height: 25px;
+    height: 20px;
     background: #e0dede;
     display: flex;
     margin: auto;
